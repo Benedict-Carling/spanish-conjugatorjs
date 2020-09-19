@@ -101,7 +101,7 @@ function SpanishConjugator(rootverb,tense,mood,pronoun) {
         //------------------------ Subjunctive / Present
         if(tense == "present"){
             if(mood == "subjunctive"){
-                let conjugation = subjunctive_present.subjuctive_present(rootverb,pronoun)
+                let conjugation = subjunctive_present.subjunctive_present(rootverb,pronoun)
                 return conjugation
             }
         }
