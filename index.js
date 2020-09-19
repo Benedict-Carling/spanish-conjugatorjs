@@ -19,56 +19,56 @@ function SpanishConjugator(rootverb,tense,mood,pronoun) {
         //------------------------ Indicitive
         //------------------------ Indicitive / Present
         if(tense == "present"){
-            if(mood == "indicitive"){
+            if(mood == "indicative"){
                 let conjugation = 'not implemented yet'
                 return conjugation
             }
         }
         //------------------------ Indicitive / Imperfect
         if(tense == "imperfect"){
-            if(mood == "indicitive"){
+            if(mood == "indicative"){
                 let conjugation = 'not implemented yet'
                 return conjugation
             }
         }
         //------------------------ Indicitive / Preterite
         if(tense == "preterite"){
-            if(mood == "indicitive"){
+            if(mood == "indicative"){
                 let conjugation = 'not implemented yet'
                 return conjugation
             }
         }
         //------------------------ Indicitive / Future Simple
         if(tense == "future"){
-            if(mood == "indicitive"){
+            if(mood == "indicative"){
                 let conjugation = 'not implemented yet'
                 return conjugation
             }
         }
         //------------------------ Indicitive / Present Perfect Compound Tense
         if(tense == "present_perfect"){
-            if(mood == "indicitive"){
+            if(mood == "indicative"){
                 let conjugation = 'not implemented yet'
                 return conjugation
             }
         }
         //------------------------ Indicitive / Past Perfect Compound Tense
         if(tense == "past_perfect"){
-            if(mood == "indicitive"){
+            if(mood == "indicative"){
                 let conjugation = 'not implemented yet'
                 return conjugation
             }
         }
         //------------------------ Indicitive / Past Anterior Compound Tense
         if(tense == "past_anterior"){
-            if(mood == "indicitive"){
+            if(mood == "indicative"){
                 let conjugation = 'not implemented yet'
                 return conjugation
             }
         }
         //------------------------ Indicitive / Future Perfect Compound Tense
         if(tense == "future_perfect"){
-            if(mood == "indicitive"){
+            if(mood == "indicative"){
                 let conjugation = 'not implemented yet'
                 return conjugation
             }
@@ -98,7 +98,7 @@ function SpanishConjugator(rootverb,tense,mood,pronoun) {
         }
         //------------------------ Imperitive / Negative
         if(tense == "negative"){
-            if(mood == "imperitive"){
+            if(mood == "imperative"){
                 let conjugation = 'not implemented yet'
                 return conjugation
             }
@@ -163,5 +163,6 @@ function SpanishConjugator(rootverb,tense,mood,pronoun) {
         return 'Error, unable to conjugate, please either submit issue or double check docs'
     }
 }
+
 
 module.exports.SpanishConjugator = SpanishConjugator;
