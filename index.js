@@ -11,7 +11,7 @@ function SpanishConjugator(rootverb,tense,mood,pronoun) {
         return conjugation;
     } catch (error) {
         //Add all tenses
-        return subjunctive_present.subjuctive_present("hablar","yo");
+        return subjunctive_present.subjunctive_present("hablar","yo");
     }
 }
 
