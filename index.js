@@ -1,5 +1,11 @@
 const irregular_dictionary = require('./irregulars/irregulars_dictionary')
+
 const subjunctive_present = require('./tenses/subjunctive/present');
+const subjunctive_present_perfect = require('./tenses/subjunctive/present_perfect');
+const subjunctive_pluperfect = require('./tenses/subjunctive/pluperfect');
+const subjunctive_imperfect = require('./tenses/subjunctive/imperfect');
+const subjunctive_imperfect_se = require('./tenses/subjunctive/imperfect_se');
+const subjunctive_future = require('./tenses/subjunctive/future');
 
 function SpanishConjugator(rootverb,tense,mood,pronoun) {
     // Make all inputs lower case
@@ -101,57 +107,62 @@ function SpanishConjugator(rootverb,tense,mood,pronoun) {
         //------------------------ Subjunctive / Present
         if(tense == "present"){
             if(mood == "subjunctive"){
-                let conjugation = subjunctive_present.subjunctive_present(rootverb,pronoun)
-                return conjugation
+                let conjugate = subjunctive_present.subjunctive_present;
+                let conjugation = conjugate(rootverb,pronoun);
+                return conjugation;
             }
         }
         //------------------------ Subjunctive / Present Perfect
         if(tense == "present_perfect"){
             if(mood == "subjunctive"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                let conjugate = subjunctive_present_perfect.subjunctive_present_perfect;
+                let conjugation = conjugate(rootverb,pronoun);
+                return conjugation;
             }
         }
         //------------------------ Subjunctive / Pluperfect
         if(tense == "pluperfect"){
             if(mood == "subjunctive"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                let conjugate = subjunctive_pluperfect.subjunctive_pluperfect;
+                let conjugation = conjugate(rootverb,pronoun);
+                return conjugation;
             }
         }
         //------------------------ Subjunctive / Future Perfect
         if(tense == "future_perfect"){
             if(mood == "subjunctive"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                let conjugate = subjunctive_future_perfect.subjunctive_future_perfect;
+                let conjugation = conjugate(rootverb,pronoun);
+                return conjugation;
             }
         }
         //------------------------ Subjunctive / Imperfect
         if(tense == "imperfect"){
             if(mood == "subjunctive"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                let conjugate = subjunctive_imperfect.subjunctive_imperfect;
+                let conjugation = conjugate(rootverb,pronoun);
+                return conjugation;
             }
         }
         //------------------------ Subjunctive / Imperfect se
         if(tense == "imperfect_se"){
             if(mood == "subjunctive"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                let conjugate = subjunctive_imperfect_se.subjunctive_imperfect_se;
+                let conjugation = conjugate(rootverb,pronoun);
+                return conjugation;
             }
         }
         //------------------------ Subjunctive / Future
         if(tense == "future"){
             if(mood == "subjunctive"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                let conjugate = subjunctive_future.subjunctive_future;
+                let conjugation = conjugate(rootverb,pronoun);
+                return conjugation;
             }
         }
         return 'Error, unable to conjugate, please either submit issue or double check docs'
     }
 }
 
-console.log(SpanishConjugator("hablar","present","subjunctive","yo"));
-console.log(SpanishConjugator("ir","present","indicative","yo"));
 
 module.exports.SpanishConjugator = SpanishConjugator;

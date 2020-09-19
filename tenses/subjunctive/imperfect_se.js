@@ -88,6 +88,4 @@ function subjunctive_imperfect_se(rootverb,pronoun) {
     }
 }
 
-console.log(subjunctive_imperfect_se("hablar","usted"))
-
 module.exports.subjunctive_imperfect_se = subjunctive_imperfect_se;
