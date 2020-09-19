@@ -1,0 +1,23 @@
+{
+  "name": "spanishconjugator",
+  "version": "1.0.0",
+  "description": "A npm package for spanish conjugation by mood, tense and pronoun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benedict-Carling/spanish-conjugatorjs.git"
+  },
+  "keywords": [
+    "Spanish",
+    "Conjugator"
+  ],
+  "author": "Benedict Carling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benedict-Carling/spanish-conjugatorjs/issues"
+  },
+  "homepage": "https://github.com/Benedict-Carling/spanish-conjugatorjs#readme"
+}
