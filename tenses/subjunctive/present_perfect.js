@@ -88,6 +88,4 @@ function subjunctive_present_perfect(rootverb,pronoun) {
     }
 }
 
-console.log(subjunctive_present_perfect("hablar","usted"))
-
 module.exports.subjunctive_present_perfect = subjunctive_present_perfect;

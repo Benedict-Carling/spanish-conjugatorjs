@@ -88,6 +88,4 @@ function subjunctive_future(rootverb,pronoun) {
     }
 }
 
-console.log(subjunctive_future("hablar","usted"))
-
 module.exports.subjunctive_future = subjunctive_future;

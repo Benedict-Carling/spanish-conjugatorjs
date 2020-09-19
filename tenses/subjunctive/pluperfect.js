@@ -88,6 +88,4 @@ function subjunctive_pluperfect(rootverb,pronoun) {
     }
 }
 
-console.log(subjunctive_pluperfect("hablar","usted"))
-
 module.exports.subjunctive_pluperfect = subjunctive_pluperfect;
