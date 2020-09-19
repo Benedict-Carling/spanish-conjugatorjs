@@ -1,5 +1,5 @@
 {
-  "name": "spanishconjugator",
+  "name": "spanishconjugator_test1",
   "version": "1.0.0",
   "description": "A npm package for spanish conjugation by mood, tense and pronoun",
   "main": "index.js",
