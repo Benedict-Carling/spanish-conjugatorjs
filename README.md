@@ -149,3 +149,8 @@ SpanishConjugator.SpanishConjugator('hablar','imperfect_se','subjunctive','yo')
 SpanishConjugator.SpanishConjugator('hablar','future','subjunctive','yo')
 >>> hablare
 ```
+
+# Alternative Versions
+Check out the python version of the library if you are working in a python enviroment
+
+https://github.com/Benedict-Carling/spanish-conjugator
