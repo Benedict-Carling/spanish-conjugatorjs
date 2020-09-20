@@ -19,3 +19,15 @@ const SpanishConjugator = require('spanishconjugator');
 let conjugation = SpanishConjugator.SpanishConjugator('hablar','imperfect','indicitive','yo');
 console.log(conjugation);
 >>> hablaba
+```
+
+## Tenses, Moods and Pronouns implemented
+
+All pronouns are implemented
+```yo, tu, usted, nosotros, vosotros, ustedes```
+
+All moods currently implemented are
+```indicitive, conditional```
+
+All tenses currently implemented are
+```present, imperfect, preterite, future, present_perfect, past_anterior, future_perfect, conditional_simple```
