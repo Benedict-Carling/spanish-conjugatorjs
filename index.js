@@ -16,7 +16,11 @@ const indicative_imperfect = require('./tenses/indicative/imperfect');
 const indicative_future = require('./tenses/indicative/future');
 const indicative_future_perfect = require('./tenses/indicative/future_perfect');
 
-const verb_not_found = require('./error_messages/verb_not_found');
+const affirmative = require('./tenses/imperative/affirmative');
+const negative = require('./tenses/imperative/negative');
+
+const conditional_perfect = require('./tenses/conditional/perfect');
+const conditional_simple_conditional = require('./tenses/conditional/simple_conditional');
 
 function SpanishConjugator(rootverb,tense,mood,pronoun) {
     // Make all inputs lower case
@@ -83,30 +87,26 @@ function SpanishConjugator(rootverb,tense,mood,pronoun) {
         //------------------------ Conditional / Simple Conditional
         if(tense == "simple_conditional"){
             if(mood == "conditional"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = conditional_simple_conditional.conditional_simple_conditional;
             }
         }
         //------------------------ Conditional / Perfect 
         if(tense == "perfect"){
             if(mood == "conditional"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = conditional_perfect.conditional_perfect;
             }
         }
         //------------------------ Imperitive
         //------------------------ Imperitive / Affirmative
         if(tense == "affirmative"){
             if(mood == "imperitive"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = affirmative.affirmative;
             }
         }
         //------------------------ Imperitive / Negative
         if(tense == "negative"){
             if(mood == "imperative"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = negative.negative;
             }
         }
         //------------------------ Subjunctive

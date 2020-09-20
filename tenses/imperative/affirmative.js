@@ -77,6 +77,4 @@ function affirmative(rootverb,pronoun) {
     }
 }
 
-console.log(affirmative("hablar","usted"))
-
 module.exports.affirmative = affirmative;

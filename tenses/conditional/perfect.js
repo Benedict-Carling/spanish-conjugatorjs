@@ -88,6 +88,4 @@ function conditional_perfect(rootverb,pronoun) {
     }
 }
 
-console.log(conditional_perfect("hablar","usted"))
-
 module.exports.conditional_perfect = conditional_perfect;

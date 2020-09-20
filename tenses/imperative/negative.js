@@ -77,6 +77,4 @@ function negative(rootverb,pronoun) {
     }
 }
 
-console.log(negative("hablar","usted"))
-
 module.exports.negative = negative;

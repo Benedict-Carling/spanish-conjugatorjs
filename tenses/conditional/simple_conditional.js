@@ -88,6 +88,4 @@ function conditional_simple_conditional(rootverb,pronoun) {
     }
 }
 
-console.log(conditional_simple_conditional("hablar","usted"))
-
 module.exports.conditional_simple_conditional = conditional_simple_conditional;
