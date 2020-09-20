@@ -88,6 +88,4 @@ function indicative_future(rootverb,pronoun) {
     }
 }
 
-console.log(indicative_future("hablar","usted"))
-
 module.exports.indicative_future = indicative_future;

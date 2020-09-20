@@ -88,6 +88,4 @@ function indicative_preterite(rootverb,pronoun) {
     }
 }
 
-console.log(indicative_preterite("hablar","usted"))
-
 module.exports.indicative_preterite = indicative_preterite;

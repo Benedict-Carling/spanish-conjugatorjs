@@ -88,6 +88,4 @@ function indicative_past_anterior(rootverb,pronoun) {
     }
 }
 
-console.log(indicative_past_anterior("hablar","usted"))
-
 module.exports.indicative_past_anterior = indicative_past_anterior;

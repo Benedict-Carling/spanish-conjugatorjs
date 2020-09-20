@@ -7,9 +7,23 @@ const subjunctive_imperfect = require('./tenses/subjunctive/imperfect');
 const subjunctive_imperfect_se = require('./tenses/subjunctive/imperfect_se');
 const subjunctive_future = require('./tenses/subjunctive/future');
 
+const indicative_present = require('./tenses/indicative/present');
+const indicative_preterite = require('./tenses/indicative/preterite');
+const indicative_present_perfect = require('./tenses/indicative/present_perfect');
+const indicative_past_perfect = require('./tenses/indicative/past_perfect');
+const indicative_past_anterior = require('./tenses/indicative/past_anterior');
+const indicative_imperfect = require('./tenses/indicative/imperfect');
+const indicative_future = require('./tenses/indicative/future');
+const indicative_future_perfect = require('./tenses/indicative/future_perfect');
+
+const verb_not_found = require('./error_messages/verb_not_found');
+
 function SpanishConjugator(rootverb,tense,mood,pronoun) {
     // Make all inputs lower case
     //console.log(irregular_dictionary.irregulars_dictionary.rootverb)
+    // Initiates Variables
+    var conjugate;
+    var conjugation;
     // Queries Irregular database
     try {
         //let my_irregulars = irregular_dictionary.irregulars_dictionary;
@@ -20,57 +34,49 @@ function SpanishConjugator(rootverb,tense,mood,pronoun) {
         //------------------------ Indicitive / Present
         if(tense == "present"){
             if(mood == "indicative"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = indicative_present.indicative_present;
             }
         }
         //------------------------ Indicitive / Imperfect
         if(tense == "imperfect"){
             if(mood == "indicative"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = indicative_imperfect.indicative_imperfect;
             }
         }
         //------------------------ Indicitive / Preterite
         if(tense == "preterite"){
             if(mood == "indicative"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = indicative_preterite.indicative_preterite;
             }
         }
         //------------------------ Indicitive / Future Simple
         if(tense == "future"){
             if(mood == "indicative"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = indicative_future.indicative_future;
             }
         }
         //------------------------ Indicitive / Present Perfect Compound Tense
         if(tense == "present_perfect"){
             if(mood == "indicative"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = indicative_present_perfect.indicative_present_perfect;
             }
         }
         //------------------------ Indicitive / Past Perfect Compound Tense
         if(tense == "past_perfect"){
             if(mood == "indicative"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = indicative_past_perfect.indicative_past_perfect;
             }
         }
         //------------------------ Indicitive / Past Anterior Compound Tense
         if(tense == "past_anterior"){
             if(mood == "indicative"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = indicative_past_anterior.indicative_past_anterior;
             }
         }
         //------------------------ Indicitive / Future Perfect Compound Tense
         if(tense == "future_perfect"){
             if(mood == "indicative"){
-                let conjugation = 'not implemented yet'
-                return conjugation
+                conjugate = indicative_future_perfect.indicative_future_perfect;
             }
         }
         //------------------------ Conditional
@@ -107,60 +113,52 @@ function SpanishConjugator(rootverb,tense,mood,pronoun) {
         //------------------------ Subjunctive / Present
         if(tense == "present"){
             if(mood == "subjunctive"){
-                let conjugate = subjunctive_present.subjunctive_present;
-                let conjugation = conjugate(rootverb,pronoun);
-                return conjugation;
+                conjugate = subjunctive_present.subjunctive_present;
             }
         }
         //------------------------ Subjunctive / Present Perfect
         if(tense == "present_perfect"){
             if(mood == "subjunctive"){
-                let conjugate = subjunctive_present_perfect.subjunctive_present_perfect;
-                let conjugation = conjugate(rootverb,pronoun);
-                return conjugation;
+                conjugate = subjunctive_present_perfect.subjunctive_present_perfect;
             }
         }
         //------------------------ Subjunctive / Pluperfect
         if(tense == "pluperfect"){
             if(mood == "subjunctive"){
-                let conjugate = subjunctive_pluperfect.subjunctive_pluperfect;
-                let conjugation = conjugate(rootverb,pronoun);
-                return conjugation;
+                conjugate = subjunctive_pluperfect.subjunctive_pluperfect;
             }
         }
         //------------------------ Subjunctive / Future Perfect
         if(tense == "future_perfect"){
             if(mood == "subjunctive"){
-                let conjugate = subjunctive_future_perfect.subjunctive_future_perfect;
-                let conjugation = conjugate(rootverb,pronoun);
-                return conjugation;
+                conjugate = subjunctive_future_perfect.subjunctive_future_perfect;
             }
         }
         //------------------------ Subjunctive / Imperfect
         if(tense == "imperfect"){
             if(mood == "subjunctive"){
-                let conjugate = subjunctive_imperfect.subjunctive_imperfect;
-                let conjugation = conjugate(rootverb,pronoun);
-                return conjugation;
+                conjugate = subjunctive_imperfect.subjunctive_imperfect;
             }
         }
         //------------------------ Subjunctive / Imperfect se
         if(tense == "imperfect_se"){
             if(mood == "subjunctive"){
-                let conjugate = subjunctive_imperfect_se.subjunctive_imperfect_se;
-                let conjugation = conjugate(rootverb,pronoun);
-                return conjugation;
+                conjugate = subjunctive_imperfect_se.subjunctive_imperfect_se;
             }
         }
         //------------------------ Subjunctive / Future
         if(tense == "future"){
             if(mood == "subjunctive"){
-                let conjugate = subjunctive_future.subjunctive_future;
-                let conjugation = conjugate(rootverb,pronoun);
-                return conjugation;
+                conjugate = subjunctive_future.subjunctive_future;
             }
         }
-        return 'Error, unable to conjugate, please either submit issue or double check docs'
+
+        try {
+            conjugation = conjugate(rootverb,pronoun);
+            return conjugation;
+        } catch (error) {
+            return 'Error, unable to conjugate, please either submit issue or double check docs';
+        }
     }
 }
 

@@ -88,6 +88,4 @@ function indicative_imperfect(rootverb,pronoun) {
     }
 }
 
-console.log(indicative_imperfect("hablar","usted"))
-
 module.exports.indicative_imperfect = indicative_imperfect;
