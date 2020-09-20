@@ -55,3 +55,97 @@ we can check the code works by running it against out current unit tests located
 ## Developing - Submission
 
 To submit code to this repositry please fork and submit a pull request 🚀
+
+## Exaple usage of different moods/tenses with hablar and yo
+
+### Indicitive Present
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','present','indicitive','yo')
+>>> hablo
+```
+### Indicitive Imperfect
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','imperfect','indicitive','yo')
+>>> hablaba
+```
+### Indicitive Preterite
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','preterite','indicitive','yo')
+>>> hablé
+```
+### Indicitive Future
+
+```node
+```node
+SpanishConjugator.SpanishConjugator('hablar','future','indicitive','yo')
+>>> hablaré
+```
+### Indicitive Present_Perfect
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','present_perfect','indicitive','yo')
+>>> he hablado
+```
+### Indicitive Past_Anterior
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','past_anterior','indicitive','yo')
+>>> hube hablado
+```
+### Indicitive Future_Perfect
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','future_perfect','indicitive','yo')
+>>> habré hablado
+```
+### Conditional Simple
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','simple_conditional','conditional','yo')
+>>> hablaría
+```
+### Conditional Perfect
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','perfect','conditional','yo')
+>>> habría hablado
+```
+### Imperitive Afferative
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','affirmative','imperitive','tu')
+>>> habla
+```
+### Imperitive Negative
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','negative','imperitive','tu')
+>>> hables
+```
+### Subjunctive Present
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','present','subjunctive','yo')
+>>> hable
+```
+### Subjunctive Imperfect
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','imperfect','subjunctive','yo')
+>>> hablara
+```
+### Subjunctive Imperfect_se
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','imperfect_se','subjunctive','yo')
+>>> hablase
+```
+### Subjunctive Future
+
+```node
+SpanishConjugator.SpanishConjugator('hablar','future','subjunctive','yo')
+>>> hablare
+```
