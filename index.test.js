@@ -10,3 +10,9 @@ test("testing subjunctive present",()=>{
     let expected = SpanishConjugator.SpanishConjugator("hablar","present","subjunctive","yo");
     expect(expected).toBe('hable')
 })
+
+test("error message",()=>{
+    let error_message = 'Error, unable to conjugate, please either submit issue or double check docs'
+    let output = SpanishConjugator.SpanishConjugator("vdvd","vdvd","vdvd","vdvd")
+    expect(error_message).toBe(output)
+})
