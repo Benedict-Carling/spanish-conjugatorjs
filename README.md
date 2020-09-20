@@ -11,10 +11,11 @@ A npm package to conjugate spanish verbs by mood, tense and pronoun.
 
 `npm i spanishconjugator`
 
-then
+## Example usage
 
-```
+Example node usage; the `conjugate` function takes 4 parameters being root-verb, tense, mood, pronoun respectively  
+```node
 const SpanishConjugator = require('spanishconjugator');
-
-
-```
+let conjugation = SpanishConjugator.SpanishConjugator('hablar','imperfect','indicitive','yo');
+console.log(conjugation);
+>>> hablaba
