@@ -79,7 +79,6 @@ SpanishConjugator.SpanishConjugator('hablar','preterite','indicitive','yo')
 ### Indicitive Future
 
 ```node
-```node
 SpanishConjugator.SpanishConjugator('hablar','future','indicitive','yo')
 >>> hablaré
 ```
